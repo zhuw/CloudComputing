@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1F0" >
+
+    <TextView
+        android:id="@+id/rstvHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="48dp"
+        android:textSize="15sp"
+        android:textColor="#555555"        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rsetUserName"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="22dp"
+        android:layout_below="@+id/rstvHeadline"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="15dp"
+        android:hint="Username"
+        android:ems="10"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textColor="#555555" 
+        android:textColorHint="#d3d3d8" 
+        android:background="@drawable/textview_background"
+        android:inputType="textPersonName" 
+         />
+    
+    
+    <EditText
+        android:id="@+id/rsetEmail"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/rsetUserName"
+        android:layout_below="@+id/rsetUserName"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textColor="#555555"  
+        android:textColorHint="#d3d3d8"
+        android:background="@drawable/textview_background"
+        android:inputType="textEmailAddress" >
+
+        
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/rsetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/rsetEmail"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rsetEmail"
+        android:layout_alignRight="@id/rsetEmail"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#555555"  
+        android:textColorHint="#d3d3d8"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:background="@drawable/textview_background" />
+
+
+
+    <EditText
+        android:id="@+id/rsetConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/rsetPassword"
+        android:layout_below="@+id/rsetPassword"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/rsetPassword"
+        android:hint="Confirm Password"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:background="@drawable/textview_background"
+        android:ems="10"
+        android:textColor="#555555"  
+        android:textColorHint="#d3d3d8"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/rsetName"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/rsetConfirmPass"
+        android:layout_below="@+id/rsetConfirmPass"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/rsetConfirmPass"
+        android:hint="Name"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textColor="#555555"  
+        android:textColorHint="#d3d3d8"
+        android:background="@drawable/textview_background"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rsetName"
+        android:layout_below="@+id/rsetName"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="33dp"
+        android:background="#51ACED"
+        android:textColor="#555555"  
+        android:text="Done" />
+
+</RelativeLayout>

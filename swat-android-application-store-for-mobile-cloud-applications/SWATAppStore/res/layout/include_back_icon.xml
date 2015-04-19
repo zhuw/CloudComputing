@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:actionButtonStyle"
+    android:id="@+id/action_bar_back_icon"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="2" >
+    
+	<ImageView 
+	    android:id="@+id/back_icon_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_gravity="start"
+	    android:src="@drawable/back_arrow_75" />	
+    
+    
+</FrameLayout>
